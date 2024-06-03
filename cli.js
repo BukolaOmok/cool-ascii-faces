@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-var coolFace = require('./');
-var args = process.argv.splice(2);
+const coolFace = require('./');
+const args = process.argv.splice(2);
 
 if (args.indexOf('-a') !== -1 || args.indexOf('--all') !== -1) {
   coolFace.faces.forEach(function (face) {
